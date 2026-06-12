@@ -1,34 +1,54 @@
 # Global Craft Brewery Database 2026
 
-Prosty folder do samodzielnej analizy datasetu Kaggle:
+Repository for manual analysis of the Kaggle dataset:
 https://www.kaggle.com/datasets/kanchana1990/global-craft-brewery-database-2026
 
-## Co jest gotowe
+## Current project structure
 
-- `brewery_ds` jako lokalne virtualenv
-- pliki datasetu w `data/raw/`
-- czysty notebook w `notebooks/analysis.ipynb`
-- lekkie `requirements.txt`
+```text
+.
+|-- brewery_ds/
+|-- data/
+|   |-- raw/
+|   |   |-- global_craft_brewery_database_2026.csv
+|   |   `-- global-craft-brewery-database-2026.zip
+|   `-- README.md
+|-- notebooks/
+|   |-- analysis.ipynb
+|   `-- README.md
+|-- LICENSE
+|-- README.md
+`-- requirements.txt
+```
 
-## Pliki danych
+## What is included
 
-W `data/raw/` są:
+- `brewery_ds/` with the local Python environment
+- `data/raw/` with the downloaded dataset files
+- `notebooks/analysis.ipynb` with the analysis notebook
+- `requirements.txt` with the project dependencies
+
+## Data files
+
+The following raw files are available in `data/raw/`:
 
 - `global_craft_brewery_database_2026.csv`
 - `global-craft-brewery-database-2026.zip`
 
-## Start
+## Notebook
 
-PowerShell:
+The main analysis lives in `notebooks/analysis.ipynb`.
+
+## Getting started
 
 ```powershell
 .\brewery_ds\Scripts\Activate.ps1
 jupyter lab
 ```
 
-Potem otwórz `notebooks/analysis.ipynb`.
+Then open `notebooks/analysis.ipynb`.
 
-## Odtworzenie środowiska
+## Recreate the environment
 
 ```powershell
 python -m venv brewery_ds
